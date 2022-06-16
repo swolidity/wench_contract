@@ -13,7 +13,7 @@ contract NFcommuniT is ERC721A, Ownable, Pausable {
     string public baseURI;
 
     constructor() ERC721A("Wench", "WENCH") {
-        setBaseURI("ipfs://QmSM3X3nA1XkGTZRtZ2oQxKayd9NhT2HAg9jjRncYmXuy1/");
+        setBaseURI("ipfs://replace/");
         _pause();
     }
 
