@@ -1,19 +1,21 @@
 // SPDX-License-Identifier: UNLICENSED
 
+// Because pancakes are better than waffles.
+
 pragma solidity ^0.8.0;
 
 import "erc721a/contracts/ERC721A.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 
-contract NFcommuniT is ERC721A, Ownable, Pausable {
-    uint256 public mintPrice = .01 ether;
-    uint256 public maxSupply = 10000;
+contract Wench is ERC721A, Ownable, Pausable {
+    uint256 public mintPrice = .0069 ether;
+    uint256 public maxSupply = 1638;
     uint256 public maxMint = 20;
     string public baseURI;
 
-    constructor() ERC721A("Wench", "WENCH") {
-        setBaseURI("ipfs://replace/");
+    constructor() ERC721A("WENCH", "WENCH") {
+        setBaseURI("ipfs://");
         _pause();
     }
 
