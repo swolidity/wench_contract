@@ -10,12 +10,14 @@ import "@openzeppelin/contracts/security/Pausable.sol";
 
 contract Wench is ERC721A, Ownable, Pausable {
     uint256 public mintPrice = .0069 ether;
-    uint256 public maxSupply = 1638;
+    uint256 public maxSupply = 2043;
     uint256 public maxMint = 20;
     string public baseURI;
 
-    constructor() ERC721A("WENCH", "WENCH") {
-        setBaseURI("ipfs://");
+    constructor() ERC721A("Wench 2043 Rebooted", "WENCH") {
+        setBaseURI(
+            "ipfs://bafybeigavcqqjbwo3qus7lvm2t2wjgf42fphhqy2r7fztqvihk3sz2fwoi/"
+        );
         _pause();
     }
 
