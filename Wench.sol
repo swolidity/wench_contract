@@ -16,7 +16,7 @@ contract Wench is ERC721A, Ownable, Pausable {
 
     constructor() ERC721A("Wench 2043 Rebooted", "WENCH") {
         setBaseURI(
-            "ipfs://bafybeigavcqqjbwo3qus7lvm2t2wjgf42fphhqy2r7fztqvihk3sz2fwoi/"
+            "ipfs://bafybeicbljctj7w5b3r3ccdjan2fanamkurmjwd5k2d232xv2abajtgspa/"
         );
         _pause();
     }
